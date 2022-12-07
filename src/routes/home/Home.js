@@ -49,9 +49,9 @@ function Home() {
           <ul>
             {navLinks}
             <li>
-              <Link to={Resume} target="_blank">
+              <a href={Resume} target="_blank">
                 Resume
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
