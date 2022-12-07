@@ -1,0 +1,22 @@
+#about {
+  padding: 7em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 0em 10vw;
+}
+
+#about h1 {
+  text-align: center;
+  padding-bottom: 0.5em;
+  border-bottom: thin solid var(--theme-color);
+}

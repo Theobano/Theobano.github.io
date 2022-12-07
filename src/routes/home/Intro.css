@@ -1,0 +1,11 @@
+.intro > * {
+  margin: 1px 0;
+}
+.intro {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  padding: 1em 0;
+  border-bottom: thin solid var(--theme-color);
+}

@@ -1,0 +1,9 @@
+.circle {
+    border-radius: 50%;
+}
+
+.theme-border-all{
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--theme-color);
+}
