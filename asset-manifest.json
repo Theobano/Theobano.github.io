@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.ae31ded8.css",
-    "main.js": "/static/js/main.3d059f79.js",
+    "main.js": "/static/js/main.842b23f4.js",
     "static/css/304.e145616d.chunk.css": "/static/css/304.e145616d.chunk.css",
-    "static/js/304.5d6a5194.chunk.js": "/static/js/304.5d6a5194.chunk.js",
+    "static/js/304.53adc518.chunk.js": "/static/js/304.53adc518.chunk.js",
     "static/css/886.b2391539.chunk.css": "/static/css/886.b2391539.chunk.css",
     "static/js/886.61e947db.chunk.js": "/static/js/886.61e947db.chunk.js",
     "static/js/231.208c8668.chunk.js": "/static/js/231.208c8668.chunk.js",
@@ -18,9 +18,9 @@
     "static/media/Resume-Adedotun-Ajibade.pdf": "/static/media/Resume-Adedotun-Ajibade.f14099709d172a88efae.pdf",
     "index.html": "/index.html",
     "main.ae31ded8.css.map": "/static/css/main.ae31ded8.css.map",
-    "main.3d059f79.js.map": "/static/js/main.3d059f79.js.map",
+    "main.842b23f4.js.map": "/static/js/main.842b23f4.js.map",
     "304.e145616d.chunk.css.map": "/static/css/304.e145616d.chunk.css.map",
-    "304.5d6a5194.chunk.js.map": "/static/js/304.5d6a5194.chunk.js.map",
+    "304.53adc518.chunk.js.map": "/static/js/304.53adc518.chunk.js.map",
     "886.b2391539.chunk.css.map": "/static/css/886.b2391539.chunk.css.map",
     "886.61e947db.chunk.js.map": "/static/js/886.61e947db.chunk.js.map",
     "231.208c8668.chunk.js.map": "/static/js/231.208c8668.chunk.js.map",
@@ -33,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.ae31ded8.css",
-    "static/js/main.3d059f79.js"
+    "static/js/main.842b23f4.js"
   ]
 }
