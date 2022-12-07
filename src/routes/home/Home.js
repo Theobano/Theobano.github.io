@@ -48,7 +48,7 @@ function Home() {
           <ul>
             {navLinks}
             <li>
-              <a href={Resume} target="_blank">
+              <a href={Resume} target="_blank" rel="noreferrer">
                 Resume
               </a>
             </li>
