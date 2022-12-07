@@ -6,7 +6,6 @@ import TwitterIcon from "../../components/icons/TwitterIcon";
 import useWindowDimensions from "../../hooks/window";
 import { toLinksList } from "../../utils/navigation";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
 import "./Home.css";
 import Resume from "../../assets/documents/Resume-Adedotun-Ajibade.pdf";
 
