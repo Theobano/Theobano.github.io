@@ -56,13 +56,13 @@ function Home() {
         </nav>
       </div>
       <div className="social-links">
-        <a href="https://twitter.com/dotshine">
+        <a href="https://twitter.com/dotshine" target="_blank">
           <TwitterIcon width={30} height={30} />
         </a>
-        <a href="https://ng.linkedin.com/in/dotshine">
+        <a href="https://ng.linkedin.com/in/dotshine" target="_blank">
           <LinkedinIcon width={30} height={30} />
         </a>
-        <a href="https://github.com/Theobano">
+        <a href="https://github.com/Theobano" target="_blank">
           <GithubIcon width={30} height={30} />
         </a>
       </div>

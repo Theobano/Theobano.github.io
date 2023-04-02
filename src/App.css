@@ -1,10 +1,13 @@
 * {
   --theme-color: #daa520;
   --main-background-color: #3b4d61;
+  --hover-background-color-muted: hsl(0, 0%, 69%, 0.2);
   --text-color: #f8f8ff;
+  --text-color-muted: hsl(0, 0%, 69%);
   color: var(--text-color);
   box-sizing: border-box;
   line-height: 1.5em;
+  transition: all 0.2s ease-in;
 }
 .horizontal-flex {
   display: flex;
@@ -21,7 +24,6 @@
 
 #app {
   flex: 1;
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   overflow: auto;
@@ -29,7 +31,6 @@
 
 .main-container {
   flex: 1;
-  /* min-height: 95vh; */
   background-color: var(--main-background-color);
 }
 
@@ -40,9 +41,11 @@ ol {
   padding: 0;
 }
 
-.center{
+.center {
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1em;
 }
