@@ -49,3 +49,7 @@ ol {
   align-items: center;
   padding: 1em;
 }
+
+  .footer .social-links{
+    border: none;
+  }

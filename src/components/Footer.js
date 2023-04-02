@@ -16,7 +16,7 @@ function Footer() {
           <nav>
             <ul></ul>
           </nav>
-          <div>
+          <div className="social-links">
             <a href="https://twitter.com/dotshine">
               <LazyIcon
                 iconName={"TwitterIcon"}
