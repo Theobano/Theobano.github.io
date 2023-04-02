@@ -7,7 +7,7 @@ import useWindowDimensions from "../../hooks/window";
 import { toLinksList } from "../../utils/navigation";
 import { Helmet } from "react-helmet";
 import "./Home.css";
-import Resume from "../../assets/documents/Resume-Adedotun-Ajibade.pdf";
+import FrontendResume from "../../assets/documents/Frontend-Resume-Adedotun-Ajibade.pdf";
 
 const Headshot = lazy(() => import("../../components/Headshot"));
 
@@ -48,7 +48,7 @@ function Home() {
           <ul>
             {navLinks}
             <li>
-              <a href={Resume} target="_blank" rel="noreferrer">
+              <a href={FrontendResume} target="_blank" rel="noreferrer">
                 Resume
               </a>
             </li>
