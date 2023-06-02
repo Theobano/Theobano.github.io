@@ -1,48 +1,40 @@
 import React from "react";
-import "../assets/styles/components/Footer.css";
+import "./Footer.css";
 import Headshot from "./Headshot";
 import LazyIcon from "./icons/LazyIcon";
+import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
+import { IconContext } from "react-icons";
 
 // Create footer compontent
 function Footer() {
   return (
     <div className="footer">
       <div className="footer-content">
-        <div className="name-footer">
+        {/* <div className="name-footer">
           <Headshot radius={24} />
           <h2 className="theme-colored">Adedotun Ajibade</h2>
-        </div>
+        </div> */}
         <div>
           <nav>
             <ul></ul>
           </nav>
           <div className="social-links">
+            <IconContext.Provider value={{ size: "1.5em" }} >
             <a href="https://twitter.com/dotshine">
-              <LazyIcon
-                iconName={"TwitterIcon"}
-                iconAlt={"Twitter"}
-                iconProp={{ width: 30, height: 30 }}
-              />
+              <FiTwitter />
             </a>
             <a href="https://ng.linkedin.com/in/dotshine">
-            <LazyIcon
-                iconName={"LinkedinIcon"}
-                iconAlt={"Linkedin"}
-                iconProp={{ width: 30, height: 30 }}
-              />
+            <FiLinkedin />
             </a>
             <a href="https://github.com/Theobano">
-            <LazyIcon
-                iconName={"GithubIcon"}
-                iconAlt={"Github"}
-                iconProp={{ width: 30, height: 30 }}
-              />
+              <FiGithub />
             </a>
+            </IconContext.Provider>
           </div>
         </div>
       </div>
       <div className="copyright">
-        <p>&copy; 2022 Adedotun Ajibade</p>
+        <p>&copy; 2022 All rights reserved</p>
       </div>
       <div className="dev-tech">Developed with React.js</div>
     </div>

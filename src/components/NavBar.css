@@ -5,7 +5,7 @@
   --nav-link-color: #f5f5dc;
   /* min-height: var(--navbar-height); */
   width: 100%;
-  background-color: var(--navbar-background-color);
+  /* background-color: var(--navbar-background-color); */
 }
 .navbar > ul {
   padding: 0;

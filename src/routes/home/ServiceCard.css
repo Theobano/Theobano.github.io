@@ -1,0 +1,28 @@
+.service{
+    padding: 2em;
+    box-shadow: 0 0 10px 0 var(--color-shadow);
+    display: inline-block;
+}
+
+.service:hover{
+    box-shadow: 0 0 20px 0 var(--color-shadow);
+}
+
+.service h3{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.service .service-skills>ul{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.service .service-skills ul li{
+    list-style: none;
+    background-color: var(--color-button-background);
+    color: var(--color-button-text);
+    border: thin solid var(--theme-color);
+    padding: 0.5em 1em;
+}

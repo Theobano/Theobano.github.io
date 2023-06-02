@@ -1,5 +1,6 @@
 * {
-  --theme-color: #daa520;
+  --theme-color: var(--color-secondary);
+  /* --theme-color: #daa520; */
   --main-background-color: #3b4d61;
   --hover-background-color-muted: hsl(0, 0%, 69%, 0.2);
   --text-color: #f8f8ff;
@@ -31,7 +32,7 @@
 
 .main-container {
   flex: 1;
-  background-color: var(--main-background-color);
+  /* background-color: var(--main-background-color); */
 }
 
 nav ul,
@@ -53,3 +54,30 @@ ol {
   .footer .social-links{
     border: none;
   }
+
+.link-button {
+  text-decoration: none;
+  background-color: var(--color-button-background);
+  color: var(--color-button-text);
+  border: thin solid var(--theme-color);
+  padding: 0.5em 1em;
+
+}
+
+.link-button:hover {
+  background-color: var(--color-button-background-hover);
+  color: var()
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.space-between{
+  justify-content: space-between;
+}

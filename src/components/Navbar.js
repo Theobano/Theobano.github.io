@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/components/NavBar.css";
+import "./NavBar.css";
 import { toLinksList } from "../utils/navigation";
 
 function NavBar() {

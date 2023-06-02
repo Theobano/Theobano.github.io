@@ -1,6 +1,6 @@
 .footer {
   min-height: 200px;
-  background-color: var(--main-background-color);
+  /* background-color: var(--main-background-color); */
   border-top: 5px double var(--theme-color);
   padding: 2em;
   display: flex;

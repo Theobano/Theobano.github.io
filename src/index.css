@@ -1,6 +1,58 @@
+:root{
+  /* Dark color scheme */
+  /* --color-secondary: #2d2d2d;
+  --color-tertiary: #3f3f3f;
+  --color-quaternary: #767676;
+  --color-quinary: #ccc;
+  --color-senary: #e6e6e6;
+  --color-septenary: #f2f2f2;
+  --color-octonary: #fff; */
+  --color-primary: #1a1a1a;
+  --color-secondary: #3f3f3f;
+  --color-tertiary: #ccc;
+  --color-quaternary: #e6e6e6;
+  --color-quinary: #fff;
+  --color-text-primary: #fff;
+  --color-text-secondary: #ccc;
+  --color-text-tertiary: #767676;
+  --color-text-quaternary: #3f3f3f;
+  --color-text-quinary: #1a1a1a;
+  --color-text-disabled: #767676;
+  --color-text-muted: #ccc;
+  --color-text-link: #3f3f3f;
+  --color-text-link-hover: #1a1a1a;
+  --color-text-link-visited: #767676;
+  --color-text-link-active: #3f3f3f;
+  --color-text-link-disabled: #767676;
+  --color-text-link-muted: #ccc;
+  --color-text-link-muted-hover: #767676;
+  --color-text-link-muted-visited: #767676;
+  --color-text-link-muted-active: #767676;
+  --color-text-link-muted-disabled: #767676;
+
+  --color-button-background: #3f3f3f;
+  --color-button-background-hover: #767676;
+  --color-button-background-active: #3f3f3f;
+  --color-button-background-disabled: #767676;
+  --color-button-text: #fff;
+  --color-button-text-hover: #fff;
+  --color-button-text-visited: #fff;
+  --color-button-text-active: #fff;
+  --color-button-text-disabled: #fff;
+  --color-button-border: #3f3f3f;
+  --color-button-border-hover: #1a1a1a;
+  --color-button-border-visited: #767676;
+  --color-button-border-active: #3f3f3f;
+  --color-button-border-disabled: #767676;
+
+  --color-shadow: #000;
+  
+}
+
 body,html{
   height: 100%;
   width: 100%;
+  background-color: var(--color-primary);
 }
 body {
   display: flex;
