@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/231.6721b8ea.chunk.js","mappings":"yJAKA,UAJA,WACE,OAAO,yBAAK,WACd,C","sources":["routes/contact/Contact.js"],"sourcesContent":["import React from \"react\";\r\nfunction Contact() {\r\n  return <div>Contact</div>;\r\n}\r\n\r\nexport default Contact;\r\n"],"names":[],"sourceRoot":""}
