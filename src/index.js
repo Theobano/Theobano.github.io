@@ -1,15 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter as Router } from "react-router-dom";
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorFallback from "./components/ErrorFallback";
+import Resume from "./routes/resume/Resume";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router>
     <React.StrictMode>
-      <App />
+      <Routes>
+        <Route path="/*" element={<App />} />
+        <Route
+          path="/resume"
+          element={
+            <ErrorBoundary FallbackComponent={ErrorFallback}>
+              <Resume />
+            </ErrorBoundary>
+          }
+        />
+      </Routes>
     </React.StrictMode>
   </Router>
 );

@@ -1,19 +1,13 @@
 import React from "react";
-import "./Footer.css";
-import Headshot from "./Headshot";
-import LazyIcon from "./icons/LazyIcon";
 import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 import { IconContext } from "react-icons";
+import { FooterContainer } from "./Footer.style";
 
 // Create footer compontent
 function Footer() {
   return (
-    <div className="footer">
+    <FooterContainer>
       <div className="footer-content">
-        {/* <div className="name-footer">
-          <Headshot radius={24} />
-          <h2 className="theme-colored">Adedotun Ajibade</h2>
-        </div> */}
         <div>
           <nav>
             <ul></ul>
@@ -37,7 +31,7 @@ function Footer() {
         <p>&copy; 2022 All rights reserved</p>
       </div>
       <div className="dev-tech">Developed with React.js</div>
-    </div>
+    </FooterContainer>
   );
 }
 

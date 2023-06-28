@@ -1,11 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import Intro from "./Intro";
 import useWindowDimensions from "../../hooks/window";
-import { toLinksList } from "../../utils/navigation";
 import { Helmet } from "react-helmet";
-// import "./Home.css";
-import FrontendResume from "../../assets/documents/Frontend-Resume-Adedotun-Ajibade.pdf";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   DiPython,
   DiJavascript1,
@@ -44,16 +41,18 @@ const StyledHome = styled.div`
       margin: 0;
     }
 
-    h2{
+    h2 {
       text-align: center;
       margin-bottom: 1em;
     }
 
-    section, .section {
+    section,
+    .section {
       padding: 2em;
     }
 
-    header, .header {
+    header,
+    .header {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -125,6 +124,15 @@ const StyledHome = styled.div`
       }
     }
 
+    .view-resume {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      padding: 2em;
+    }
+
     .socials {
       display: flex;
       flex-direction: row;
@@ -143,142 +151,129 @@ const StyledHome = styled.div`
 
         :hover {
           background-color: var(--color-button-background-hover);
+        }
       }
-
-      
+    }
   }
 `;
 
 function Home() {
   const { width, height } = useWindowDimensions();
-  var navLinkProps = [
-    {
-      name: "About",
-      link: "/about",
-      key: "about",
-    },
-
-    {
-      name: "Projects",
-      link: "/projects",
-      key: "projects",
-    },
-  ];
-
-  const navLinks = toLinksList(navLinkProps);
+  
   return (
     <StyledHome>
       <div id="home">
         <Helmet>
           <title>Adedotun Ajibade - Home</title>
         </Helmet>
-          <header className="header">
-            <div>
-              <Suspense fallback={<div>Loading...</div>}>
-                <Headshot
-                  radius={Math.min(0.3 * width * 0.5, 0.3 * height * 0.5)}
-                />
-              </Suspense>
-              <Intro />
-              <NavLink to="/about" className="link-button">
-                About me &gt;
-              </NavLink>
-            </div>
-          </header>
+        <header className="header">
+          <div>
+            <Suspense fallback={<div>Loading...</div>}>
+              <Headshot
+                radius={Math.min(0.3 * width * 0.5, 0.3 * height * 0.5)}
+              />
+            </Suspense>
+            <Intro />
+            <NavLink to="/about" className="link-button">
+              About me &gt;
+            </NavLink>
+          </div>
+        </header>
         <section className="section">
           <h2>Skills</h2>
           <Skills />
         </section>
         <section className="section services">
-            <h2>What I Do</h2>
-            <ul>
-              <li>
-                <ServiceCard
-                  title={"Frontend Web Development"}
-                  icon={<FiCode />}
-                  skills={[
-                    <DiHtml5 title="HTML" />,
-                    <DiCss3 title="CSS" />,
-                    <DiJavascript1 title="JavaScript" />,
-                    <DiReact title="React" />,
-                    <SiVuedotjs title="Vue" />,
-                  ]}
-                >
-                  <p>
-                    I build responsive websites using modern web technologies
-                    like HTML, CSS, JavaScript, React, and Vue.
-                  </p>
-                </ServiceCard>
-              </li>
-              <li>
-                <ServiceCard
-                  title={"Backend Development"}
-                  icon={<FiCode />}
-                  skills={[
-                    <DiPython title="Python" />,
-                    <DiDjango title="Django" />,
-                    <SiFlask title="Flask" />,
-                  ]}
-                >
-                  <p>
-                    I build backend services using Python, Django, and Flask.
-                  </p>
-                </ServiceCard>
-              </li>
-              <li>
-                <ServiceCard
-                  title={"Cross-platform Development"}
-                  icon={<FiCode />}
-                  skills={[
-                    <SiFlutter title="Flutter" />,
-                    <SiDart title="Dart" />,
-                  ]}
-                >
-                  <p>
-                    I build cross-platform mobile apps using Flutter and Dart.
-                  </p>
-                </ServiceCard>
-              </li>
-              <li>
-                <ServiceCard
-                  title={"Data Science and Artificial Intelligence"}
-                  icon={<FiCode />}
-                  skills={[
-                    <DiPython title="Python" />,
-                    <SiNumpy title="Numpy" />,
-                    <SiPandas title="Pandas" />,
-                    <SiTensorflow title="Tensorflow" />,
-                  ]}
-                >
-                  <p>
-                    I build data science and artificial intelligence solutions
-                    using Python, NumPy, Pandas, and TensorFlow.
-                  </p>
-                </ServiceCard>
-              </li>
-            </ul>
-          </section>
+          <h2>What I Do</h2>
+          <ul>
+            <li>
+              <ServiceCard
+                title={"Frontend Web Development"}
+                icon={<FiCode />}
+                skills={[
+                  <DiHtml5 title="HTML" />,
+                  <DiCss3 title="CSS" />,
+                  <DiJavascript1 title="JavaScript" />,
+                  <DiReact title="React" />,
+                  <SiVuedotjs title="Vue" />,
+                ]}
+              >
+                <p>
+                  I build responsive websites using modern web technologies like
+                  HTML, CSS, JavaScript, React, and Vue.
+                </p>
+              </ServiceCard>
+            </li>
+            <li>
+              <ServiceCard
+                title={"Backend Development"}
+                icon={<FiCode />}
+                skills={[
+                  <DiPython title="Python" />,
+                  <DiDjango title="Django" />,
+                  <SiFlask title="Flask" />,
+                ]}
+              >
+                <p>I build backend services using Python, Django, and Flask.</p>
+              </ServiceCard>
+            </li>
+            <li>
+              <ServiceCard
+                title={"Cross-platform Development"}
+                icon={<FiCode />}
+                skills={[
+                  <SiFlutter title="Flutter" />,
+                  <SiDart title="Dart" />,
+                ]}
+              >
+                <p>
+                  I build cross-platform mobile apps using Flutter and Dart.
+                </p>
+              </ServiceCard>
+            </li>
+            <li>
+              <ServiceCard
+                title={"Data Science and Artificial Intelligence"}
+                icon={<FiCode />}
+                skills={[
+                  <DiPython title="Python" />,
+                  <SiNumpy title="Numpy" />,
+                  <SiPandas title="Pandas" />,
+                  <SiTensorflow title="Tensorflow" />,
+                ]}
+              >
+                <p>
+                  I build data science and artificial intelligence solutions
+                  using Python, NumPy, Pandas, and TensorFlow.
+                </p>
+              </ServiceCard>
+            </li>
+          </ul>
+        </section>
+
+        <div className="view-resume">
+          <h2>View my resume</h2>
+          <Link to="/resume" className="link-button">
+            View Resume
+          </Link>
+        </div>
 
         <div>
           <h2>Let's make magic! Connect with me</h2>
           <div className="socials">
-            <IconContext.Provider value={{ size: "2em" }} >
-            <a href="https://twitter.com/dotshine">
-              <FiTwitter />
-            </a>
-            <a href="https://ng.linkedin.com/in/dotshine">
-            <FiLinkedin />
-            </a>
-            <a href="https://github.com/Theobano">
-              <FiGithub />
-            </a>
+            <IconContext.Provider value={{ size: "2em" }}>
+              <a href="https://twitter.com/dotshine">
+                <FiTwitter />
+              </a>
+              <a href="https://ng.linkedin.com/in/dotshine">
+                <FiLinkedin />
+              </a>
+              <a href="https://github.com/Theobano">
+                <FiGithub />
+              </a>
             </IconContext.Provider>
           </div>
         </div>
-
-        <a href={FrontendResume} target="_blank" rel="noreferrer">
-          Resume
-        </a>
       </div>
     </StyledHome>
   );

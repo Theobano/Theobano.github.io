@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   DiPython,
   DiJavascript1,
@@ -33,7 +33,6 @@ function Skill(icon, name) {
 
 // Create Skills component with all skills with slide effect
 function Skills() {
-  const slideshowRef = React.useRef(null);
   const [slideIndex, setSlideIndex] = React.useState(0);
   const skillComponents = [
     { name: "Python", icon: <DiPython title="Python" /> },

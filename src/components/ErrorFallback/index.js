@@ -1,10 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import "./index.css";
+import { ErrorFallbackContainer } from "./ErrorFallback.style";
 
 function ErrorFallback({ error, resetErrorBoundary }) {
   return (
     <div className="center">
+      <ErrorFallbackContainer>
       <Helmet>
         <title>Error - Theobano</title>
       </Helmet>
@@ -13,7 +14,8 @@ function ErrorFallback({ error, resetErrorBoundary }) {
         <h2> {error.message} </h2>
         <button onClick={resetErrorBoundary}> Try again </button>
       </div>
-    </div>
+    </ErrorFallbackContainer>
+      </div>
   );
 }
 

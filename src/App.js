@@ -53,6 +53,7 @@ function App() {
                 </ErrorBoundary>
               }
             />
+           
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

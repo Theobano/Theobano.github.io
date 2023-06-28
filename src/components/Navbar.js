@@ -1,8 +1,8 @@
 import React from "react";
-import "./NavBar.css";
 import { toLinksList } from "../utils/navigation";
+import { NavBarContainer } from "./NavBar.style";
 
-function NavBar() {
+function NavBar({printable = true}) {
   var navLinkProps = [
     {
       name: "Home",
@@ -29,9 +29,9 @@ function NavBar() {
   var navLinks = toLinksList(navLinkProps);
 
   return (
-    <nav className="navbar">
+    <NavBarContainer printable={printable}>
       <ul className="horizontal-flex">{navLinks}</ul>
-    </nav>
+    </NavBarContainer>
   );
 }
 
