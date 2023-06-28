@@ -16,6 +16,12 @@ export const ResumeContainer = styled.div`
   flex-direction: column;
   gap: 1em;
 
+  @media screen {
+    @media (max-width: 440px) {
+      word-wrap: break-word;
+    }
+  }
+
   .print-button {
     position: fixed;
     top: 1em;
@@ -28,7 +34,7 @@ export const ResumeContainer = styled.div`
     font-size: 1em;
     cursor: pointer;
     box-shadow: 0 0 0.5em var(--theme-color);
-    opacity: .5;
+    opacity: 0.5;
 
     &:hover {
       background-color: var(--tertiary-color);
@@ -44,7 +50,6 @@ export const ResumeContainer = styled.div`
       display: none;
     }
   }
-  
 
   .header {
     display: flex;
@@ -54,6 +59,14 @@ export const ResumeContainer = styled.div`
     background-color: var(--secondary-color);
     color: var(--secondary-text-color);
     padding: 2em;
+
+    @media screen {
+      @media (max-width: 440px) {
+        padding: 1em;
+        font-size: 0.8em;
+        word-wrap: break-word;
+      }
+    }
 
     .name {
       font-size: 3em;
@@ -73,6 +86,14 @@ export const ResumeContainer = styled.div`
   .main {
     display: grid;
     grid-template-columns: 1fr 3fr;
+
+    @media screen {
+      @media (max-width: 440px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
     .sidebar {
       padding: 1em;
       display: flex;
@@ -101,6 +122,12 @@ export const ResumeContainer = styled.div`
             flex-wrap: nowrap;
             gap: 0.5em;
 
+            @media screen {
+              @media (max-width: 440px) {
+                flex-wrap: wrap;
+              }
+            }
+
             .contact-item-icon {
               font-size: 1em;
             }
@@ -128,6 +155,12 @@ export const ResumeContainer = styled.div`
             flex-direction: row;
             flex-wrap: nowrap;
             gap: 0.5em;
+
+            @media screen {
+              @media (max-width: 440px) {
+                flex-wrap: wrap;
+              }
+            }
           }
         }
       }
@@ -332,6 +365,5 @@ export const ResumeContainer = styled.div`
         padding: 1em;
       }
     }
-
   }
 `;
