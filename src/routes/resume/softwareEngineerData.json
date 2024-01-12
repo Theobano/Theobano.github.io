@@ -1,0 +1,83 @@
+{
+    "summary": "Results-driven Software Engineer with expertise in full-stack web development and a solid foundation in data science. Proven track record of delivering high-quality solutions using technologies such as React, Python, Django, and Flask. Adept at problem-solving, collaborating with cross-functional teams, and adapting to new technologies.",
+    "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "React",
+        "Next.js",
+        "Django",
+        "Flask",
+        "Flutter",
+        "Dart",
+        "Vue",
+        "Numpy",
+        "Pandas",
+        "Tensorflow"
+    ],
+    "experiences": [
+        {
+            "title": "Associate Software Engineer",
+            "company": "DigitalPulse Technologies Limited",
+            "location": "Lagos, Nigeria",
+            "startDate": "Feb 2022",
+            "endDate": "Present",
+            "responsibilities": [
+                "Leading the development and maintenance of dynamic web applications using React, Python, Django, and Flask.",
+                "Utilizing expertise in Python, Django, and Flask to design and maintain robust backend services.",
+                "Crafting and optimizing RESTful APIs to enhance interoperability and support seamless data exchange.",
+                "Conducting data analysis and research to inform decision-making processes.",
+                "Preparing technical proposals and documentation for clients.",
+                "Providing top-tier technical support to clients and collaborating closely with team members to troubleshoot and resolve issues promptly.",
+                "Actively contributing to project efficiency and scalability through the creation of automation scripts, process streamlining, and implementation of best practices.",
+                "Taking the lead in the preparation and presentation of comprehensive technical reports to clients, demonstrating a strong command of project details and outcomes.",
+                "Engaging in system design and architecture to ensure the scalability and maintainability of applications, contributing to overall project success."
+            ]
+        },
+        {
+            "title": "IT Support",
+            "company": "DigitalPulse Technologies Limited",
+            "location": "Lagos, Nigeria",
+            "startDate": "May 2021",
+            "endDate": "Jan 2022",
+            "responsibilities": [
+                "Delivered exceptional IT support, addressing client technical issues promptly through face-to-face interactions and remote assistance.",
+                "Collected and analyzed logs to resolve issues efficiently, ensuring a seamless user experience and minimizing downtime.",
+                "Prepared detailed technical reports and proposals for projects and clients, showcasing a strong ability to communicate technical information effectively.",
+                "Developed applications for internal use using Python and Flask, demonstrating versatility and a hands-on approach to problem-solving.",
+                "Played a key role in talking clients through a series of actions, either face-to-face or over the phone, to set up systems or resolve issues, fostering positive client relationships.",
+                "Contributed to the efficiency of internal processes by developing applications for automation using Python, Flask, Numpy, and Pandas."
+            ]
+        }
+    ],
+    "certifications": [
+        {
+            "title": "AWS Certified Cloud Practitioner",
+            "issuer": "Amazon Web Services (AWS)",
+            "issueDate": "Jan 2022"
+        },
+        {
+            "title": "AWS Cloud Practitioner Essentials Day",
+            "issuer": "Amazon Web Services (AWS) Training and Certification",
+            "completionDate": "July 4, 2022"
+        },
+        {
+            "title": "AWS Technical Essentials Day",
+            "issuer": "Amazon Web Services (AWS) Training and Certification",
+            "completionDate": "July 25, 2022"
+        },
+        {
+            "title": "Diploma in Data Science and AI",
+            "issuer": "Coven Works",
+            "issueDate": "Feb 2023"
+        },
+        {
+            "title": "Diploma in Frontend Engineering",
+            "issuer": "AltSchool Africa",
+            "issueDate": "June 2023"
+        }
+    ],
+    "references": "Available on request"
+}

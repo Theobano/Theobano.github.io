@@ -1,0 +1,63 @@
+{
+    "name": {
+        "firstName": "Adedotun",
+        "lastName": "Ajibade"
+    },
+    "personalInfo": [
+        {
+            "name": "Nationality",
+            "value": "Nigerian"
+        },
+        {
+            "name": "Gender",
+            "value": "Male"
+        }
+    ],
+    "contact": {
+        "email": {
+            "url": "mailto:divinedotun@gmail.com",
+            "title": "divinedotun@gmail.com"
+        },
+        "tel": {
+            "url": "tel:+2347037491437",
+            "title": "+2347037491437"
+        },
+        "website": {
+            "url": "https://theobano.github.io/",
+            "title": "theobano.github.io"
+        },
+        "linkedIn": {
+            "url": "https://www.linkedin.com/in/dotshine/",
+            "title": "dotshine"
+        },
+        "github": {
+            "url": "https://github.com/Theobano",
+            "title": "Theobano"
+        },
+        "address": {
+            "short": "Lagos, Nigeria",
+            "long": "No. 17, Kolawole Shonibare Street, Off Coker Road, Ilupeju, Lagos, Nigeria"
+        }
+    },
+    "education": [
+        {
+            "school": "AltSchool Africa",
+            "location": "Lagos, Nigeria",
+            "degree": "Diploma in Frontend Engineering",
+            "year": "2022 - 2023"
+        },
+        {
+            "school": "Federal University of Technology, Akure",
+            "location": "Akure, Nigeria",
+            "degree": "B.Tech Industrial Mathematics",
+            "year": "2015 - 2021",
+            "classification": "First class"
+        },
+        {
+            "school": "Coven Works",
+            "location": "Akure, Nigeria",
+            "degree": "Diploma in Data Science and AI",
+            "year": "2019 - 2020"
+        }
+    ]
+}
